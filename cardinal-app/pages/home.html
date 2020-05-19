@@ -1,0 +1,21 @@
+<style>
+    img{
+        display: block;
+        max-width:500px;
+        max-height:300px;
+        width: auto;
+        height: auto;
+    }
+</style>
+<psk-container controller-name="HomeController">
+    <psk-for-each data-view-model="entities">
+        <psk-card view-model="title" title="@title" id="321021">
+           
+           <psk-label view-model="description"></psk-label>
+           <psk-img width="50" height="50" src="@image" >
+           </psk-img>
+            
+        </psk-card>            
+       
+    </psk-for-each>
+</psk-container>
